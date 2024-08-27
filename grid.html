@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>task2</title>
+    <style>
+       
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr; 
+  grid-template-rows: 1fr 0.8fr 3fr 0.8fr;
+  gap: 15px;
+}
+
+header,article,aside,footer{
+    padding: 20px;
+}
+header {
+  grid-column: 1 / span 3;
+  background-color: rgb(222, 148, 148);
+}
+
+nav {
+  grid-column: 1 / span 3; 
+  padding: 4px;
+  background-color:rgb(222, 148, 148);
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 50px 50px 50px 50px; 
+  justify-content: end;
+}
+
+nav div{
+    background-color: rgb(137, 61, 208);
+    padding: 5px;
+   /* border: 1px solid black; */
+}
+
+article {
+  grid-column: 1 / span 2; 
+  grid-row: 3 / span 2;
+  background-color: rgb(70, 184, 215);
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+section{
+    background-color:rgb(13, 162, 204);
+    padding: 5px;;
+}
+
+aside {
+  grid-column: 3 / 4; 
+  grid-row: 3 / span 2;
+  background-color: rgb(184, 172, 172);
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: start;
+}
+
+aside div{
+    background-color: brown;
+    padding: 20px;
+}
+
+footer {
+  grid-column: 1 / span 3; 
+  background-color:rgb(222, 148, 148);
+}
+
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>Header</p>
+    </header>
+
+    <nav>
+        <div>div</div>
+        <div>div</div><div>div</div><div>div</div>
+    </nav>
+
+    <article>
+        <section>
+            <h2>Section</h2>
+        </section>
+        <section>
+            <h2>Sectio</h2>
+        </section>
+        <section>
+            <h2>Section</h2>
+        </section>
+    </article>
+
+    <aside>
+        
+        <div>div</div>
+        <div>div</div>
+
+    </aside>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+
+</body>
+</html>
