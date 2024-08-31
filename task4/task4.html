@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        width: 60%;
+        margin: auto;
+        }
+        div{
+            padding: 20px;
+        }
+        #one{
+            grid-column: 1 / span 3; 
+            grid-row: 1 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #two{
+            grid-column: 4 / span 2; 
+            grid-row: 1 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #three{
+            grid-column: 5 / span 1; 
+            grid-row: 1 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #three{
+            grid-column: 1 / span 2; 
+            grid-row: 2 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #fo{
+            grid-column: 3 / span 3; 
+            grid-row: 2 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #fi{
+            grid-column: 1 / span 4; 
+            grid-row: 3 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #s{
+            grid-column: 5 / span 1; 
+            grid-row: 3 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #se{
+            grid-column: 1 / span 3; 
+            grid-row: 4 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+        #e{
+            grid-column: 4 / span 2; 
+            grid-row: 4 / span 1;
+            background-color: rgb(220, 117, 155);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="fo">4</div>
+    <div id="fi">5</div>
+    <div id="s">6</div>
+    <div id="se">7</div>
+    <div id="e">8</div>
+
+</body>
+</html>
